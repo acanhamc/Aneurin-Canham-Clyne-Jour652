@@ -4,9 +4,13 @@ body /*styles for my resume*/
     font-size:1em;
     font-weight:400;}
 
-h1 /*name at the top*/
+#name /*name at the top*/
     {font-size:3em;
-    color:#33485e;}
+    color:#33485e;
+    border-bottom: 1px solid#33485e;
+    width: 60%;
+    min-width: 300px;
+    margin: 0 auto;}
 
 h2 /*section headers*/
     {color:white;
