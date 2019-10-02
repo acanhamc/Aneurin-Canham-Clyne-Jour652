@@ -23,6 +23,11 @@ body /*styles for my resume*/
     min-width: 300px;
     margin: 0 auto;}
 
+.menu {margin:0 auto;
+  padding: 0px;
+  display: inline;
+  list-style-type: none;}
+
 .sectionheader {color:white;
     font-size:1.5em;
     font-weight:400;
@@ -36,13 +41,13 @@ body /*styles for my resume*/
     min-width: 300px;}
 
     /*lots of :; madness in here*/
-
-strong /*current job title*/
+ /*current job title*/
+    strong
     {color:#33485e;
     font-size:1.5em;}
 
-h3 /*job title*/
-    {font-size:1.5em;
+/*job title*/
+    .jobtitle {font-size:1.5em;
     font-weight:600;}
 
 /*former employer*/
