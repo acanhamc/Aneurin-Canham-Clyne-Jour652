@@ -9,6 +9,11 @@ body /*styles for my resume*/
             max-width: 1000px;
             margin: 0 auto;}
 
+.description {margin-top:10px;
+              margin-bottom:10px;
+              margin-right:0px;
+              margin-left: 0px;}
+
 #name /*name at the top*/
     {font-size:3em;
     color:#33485e;
