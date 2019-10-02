@@ -42,9 +42,11 @@ body /*styles for my resume*/
 
     /*lots of :; madness in here*/
  /*current job title*/
-    strong
-    {color:#33485e;
-    font-size:1.5em;}
+    #title {color:#33485e;
+    font-size:1.5em;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top:20px;}
 
 /*job title*/
     .jobtitle {font-size:1.5em;
@@ -59,5 +61,18 @@ body /*styles for my resume*/
     font-style:italic;
     margin-top: 2px;}
 
+#degrees
+{margin-top: 5px;
+}
+
+#do {
+  margin-top:5px;
+}
+
 li /*list items for contacts, education and skills*/
     {font-size:1em;}
+
+.top {margin:0 auto;
+      width: 60%;
+      min-width: 300px;
+      margin-bottom: 30px;}
