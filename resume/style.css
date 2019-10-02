@@ -18,8 +18,7 @@ body /*styles for my resume*/
     min-width: 300px;
     margin: 0 auto;}
 
-#sectionheader /*section headers*/
-    {color:white;
+.sectionheader {color:white;
     font-size:1.5em;
     font-weight:400;
     background-color:#33485e;
@@ -41,13 +40,14 @@ h3 /*job title*/
     {font-size:1.5em;
     font-weight:600;}
 
-h4 /*former employer*/
-    {font-size:1.5em;}
+/*former employer*/
+    .organization {font-size:1.25em;}
 
-h5 /*employment dates*/
-    {font-size:1em;
+ /*employment dates*/
+    .date {font-size:1em;
     font-weight:400;
-    font-style:italic;}
+    font-style:italic;
+    margin-top: 2px;}
 
 li /*list items for contacts, education and skills*/
     {font-size:1em;}
