@@ -11,3 +11,27 @@
 
 .content {max-width: 900px;
           margin: 0 auto;}
+
+.position
+  {font-family: garamond, serif;
+    font-size: 20px;
+    margin-bottom:0;}
+
+.employer
+  {font-family: garamond, serif;
+   font-size:20px;
+   font-style: italic;
+  margin-bottom:0;}
+
+  .description
+   {font-family:garamond, serif;
+    font-size: 16px;
+    margin-bottom:20px;}
+
+.school {font-family:garamond, serif;
+ font-size: 16px;
+ margin-bottom:20px;}
+
+h3 {font-family: garamond, serif;
+    font-size: 24px;
+    font-weight: bold;}
