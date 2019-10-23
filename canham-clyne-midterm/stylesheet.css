@@ -2,11 +2,14 @@
           max-width: 1200px;
         margin: 0 auto;}
 
-#headline {font-family: garamond, serif;
+#headline {font-family: Garamond, serif;
           font-size: 24px;
           font-weight: heavy;}
 
-p         {font-family: helvetica, arial, sans-serif;
+#byline   {font-family: Garamond, serif;
+          font-size: 14px;}
+
+p         {font-family: Helvetica, Arial, sans-serif;
            font-size: 12px;}
 
 .subhead {font-family: garamond, serif;
