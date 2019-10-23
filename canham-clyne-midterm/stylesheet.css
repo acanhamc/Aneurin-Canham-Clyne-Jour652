@@ -4,14 +4,36 @@
 
 #headline {font-family: Garamond, serif;
           font-size: 24px;
-          font-weight: heavy;}
+          font-weight: bold;}
 
 #byline   {font-family: Garamond, serif;
-          font-size: 14px;}
+          font-size: 14px;
+          font-weight: normal;}
 
 p         {font-family: Helvetica, Arial, sans-serif;
            font-size: 12px;}
 
-.subhead {font-family: garamond, serif;
+img {max-width: 1200px;
+    margin: 0 auto;}
+
+blockquote {font-family: helvetica, sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            color: red;}
+
+.subhead {font-family: Garamond, serif;
           font-size: 18px;
-          font-style: italic;}
+          font-style: italic;
+          font-weight: bold;}
+
+.links {font-family: Helvetica, sans-serif;}
+
+p.bio { font-family: helvetica, sans-serif;
+      font-weight: bold;}
+
+ul {font-family: helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px}
+
+.question {font-style: italic;
+            font-weight: bold;}
