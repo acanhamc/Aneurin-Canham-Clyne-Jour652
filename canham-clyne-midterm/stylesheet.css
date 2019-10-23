@@ -1,0 +1,14 @@
+#content {width: 100%;
+          max-width: 1200px;
+        margin: 0 auto;}
+
+#headline {font-family: garamond, serif;
+          font-size: 24px;
+          font-weight: heavy;}
+
+p         {font-family: helvetica, arial, sans-serif;
+           font-size: 12px;}
+
+.subhead {font-family: garamond, serif;
+          font-size: 18px;
+          font-style: italic;}
