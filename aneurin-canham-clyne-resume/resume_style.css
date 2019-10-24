@@ -1,13 +1,31 @@
 
-
+*{font-family: 'EB Garamond', serif;}
 #name{
   color: red;
 }
 
 #banner {max-width:1600px;
       width: 100%;
-      margin: 0 auto;
-      }
+      margin: 0 auto;}
 
 .content {max-width: 900px;
           margin: 0 auto;}
+
+.position
+  {font-size: 20px;
+    margin-bottom:0;}
+
+.employer
+  {font-size:20px;
+   font-style: italic;
+   margin-bottom:0;}
+
+.description
+   {font-size: 16px;
+    margin-bottom:20px;}
+
+.school { font-size: 16px;
+         margin-bottom:20px;}
+
+h3 {font-size: 24px;
+    font-weight: bold;}
