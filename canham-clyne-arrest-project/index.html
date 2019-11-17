@@ -101,9 +101,15 @@ Arrest Data
 <p class="info-header">Arrests by Year 2013-2018</p>
  <div id="myLineChart"></div>
 <br>
-<p class="chapter-text">Most years
-</p>
+<p class="chapter-text">In total, UMPD carried out 3796 arrests between the start of 2013 and mid-November 2019, when the data for this story was culled. A majority of those arrested are black. UMPD only records four racial categories, White, Black, American Indian/Alaskan, and Asian/Pacific Islander. Since the data doesn't include latino/hispanic, it'd difficult to tell the overall distribution of arrests.
+</p><br>
+<p class="info-header">Racial distribution of arrests, according to UMPD data</p>
 
+  <div id="racedistributionchart"></div>
+
+
+<p class="chapter-headline">Who do the Police Police?
+</p>
 
 
 
@@ -136,6 +142,24 @@ Copyright:
      pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
    }
  });
+
+
+     var chart2 = c3.generate({
+      bindto: '#racedistributionchart',
+      data: {
+        columns: [
+          ['White', 42.5,],
+        ['Black', 52.3,],
+        ['Asian/Pacific Islander', 4.5,],
+        ['American indian/Alaskan', .5,],
+
+        ],
+        type: 'pie'
+      },
+      color: {
+        pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
+      }
+    });
 </script>
 
 </body>
