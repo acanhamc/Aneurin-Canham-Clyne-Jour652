@@ -14,6 +14,14 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+
+    <!-- Load c3.css -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.14/c3.min.css" rel="stylesheet">
+
+   <!-- Load d3.js and c3.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js" charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.14/c3.min.js"></script>
+
 </head>
 
 <body>
@@ -60,28 +68,42 @@
 
   <!--using text from old essays as filler for style-->
   <p class="headline">
-    Der Buergerkrieg in Deutschland
+    University of Maryland Police arrest hundreds of people every year. More than half of them are black.
   </p>
 
 <p class="byline">
-  Somebody Who Isn't me
+  Aneurin Canham-Clyne
 </p>
 
 <p class="chapter-headline">
-Ausbruch: 1919
+Getting Arrested
 </p>
 
 <p class="chapter-text">
-  "Die Führung hat versagt. Aber die Führung kann und muß von den Massen und aus den Massen heraus neu geschaffen werden. Die Massen sind das Entscheidende, sie sind der Fels, auf dem der Endsieg der Revolution errichtet wird. Die Massen waren auf der Höhe, sie haben diese „Niederlage“ zu einem Glied jener historischen Niederlagen gestaltet, die der Stolz und die Kraft des internationalen Sozialismus sind. Und darum wird aus dieser „Niederlage“ der künftige Sieg erblühen.</p>
+  FILLER</p>
 <br> <br>
-<p class="chapter-text">„Ordnung herrscht in Berlin!“ Ihr stumpfen Schergen! Eure „Ordnung“ ist auf Sand gebaut. Die Revolution wird sich morgen schon „rasselnd wieder in die Höh’ richten“ und zu eurem Schrecken mit Posaunenklang verkünden: Ich war, ich bin, ich werde sein!"
+<p class="chapter-text">FILLER
 </p>
 <br>
-<img src="mapa-berlin-web.jpg" alt="map of the subways" class="image">
+<img src="" alt="Police Heaquarters on Baltimore Avenue" class="image">
 
 <p class="caption">
-Understanding Geography is key to understanding history, source: Mapa-metro.com
+The Pocomoke Building on Baltimore Avenue is the Headquarters for UMPD. Photos are original.
 </p>
+<br>
+<p class="chapter-headline">
+Arrest Data
+</p>
+<br>
+<p class="chapter-text">Beginning in 2013, UMPD's jurisdiction expanded to include much of the City of College Park. For several years thereafter, arrests fell slowly, reaching a low in 2018 with 380 arrests. This year, UMPD has arrested almost 300 more people. UMPD reports this data on their website. These charts were generated with that data, by copying the arrest records for each year and analyzing them with Googlesheets.
+</p>
+<br>
+<p class="info-header">Arrests by Year 2013-2018</p>
+ <div id="myLineChart"></div>
+<br>
+<p class="chapter-text">Most years
+</p>
+
 
 
 
@@ -97,6 +119,24 @@ Copyright:
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- c3 script-->
+ <script type="text/javascript">
+ //CHART 1
+ var chart = c3.generate({
+   bindto: '#myLineChart',
+   data: {
+     x: 'x',
+     columns: [
+       ['x', 2013, 2014, 2015, 2016, 2017, 2018, 2019,],
+       ['Arrests Reported by UMPD', 696, 666, 515, 410, 450, 380, 679,],
+     ]
+   },
+   color: {
+     pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+   }
+ });
+</script>
 
 </body>
 
