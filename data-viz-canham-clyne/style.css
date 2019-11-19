@@ -1,0 +1,37 @@
+.headline {font-size: 24px;
+          font-family: garamond, serif;
+          text-align: center;}
+
+.byline {font-size: 20 px;
+        font-family: garamond, serif;
+          text-align: center;
+        font-style: italic;}
+
+.chapter-headline {font-size: 20px;
+                  font-family: garamond, serif;
+                text-align: center;
+                font-style: italic;
+                font-weight: bold;}
+
+.chapter-text {font-size: 12px;
+               font-family: helvetica, sans-serif;
+               max-width: 1200px;
+               width: 100%;
+               margin: 0 auto;
+              }
+.info-header {font-size:16px;
+              font-family: helvetica, sans-serif;
+              text-align: center;
+              font-weight: bold;}
+
+.image {max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;}
+
+  .caption {font-size: 12px;
+                 font-family: helvetica, sans-serif;
+                 max-width: 1200px;
+                 width: 100%;
+                 margin: 0 auto;}
+
+.footer {color: grey;}
