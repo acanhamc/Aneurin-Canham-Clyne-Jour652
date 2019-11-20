@@ -35,7 +35,7 @@
             margin: 0 auto;
             max-width: 900px;}
 
-.stack-image {width:100%;
+.stack-image:{width:100%;
               max-width:900px;
               margin:0 auto;
               padding-top:30px;}
@@ -106,8 +106,8 @@ a:hover {color: #0052a5;}
 a:visited {color: #999;}
 
 @media screen and (max-width: 480px) {
-  .stack-image {max-width: 480px;
-        width: 100%;}
+  .stack-image:{width: 100%;}
+  .shootingsByYearChart {width: 100%;}
 
 
 }
