@@ -1,14 +1,19 @@
 .headline {font-size: 24px;
           font-family: garamond, serif;
+          font-weight: bold;
+          color: #2546FF;
           text-align: center;}
 
 .byline {font-size: 20 px;
         font-family: garamond, serif;
+        color: #2546ff;
           text-align: center;
         font-style: italic;}
 
+
 .chapter-headline {font-size: 20px;
                   font-family: garamond, serif;
+                  color: #2546FF;
                 text-align: center;
                 font-style: italic;
                 font-weight: bold;}
@@ -21,6 +26,7 @@
               }
 .info-header {font-size:16px;
               font-family: helvetica, sans-serif;
+              color: #2546ff;
               text-align: center;
               font-weight: bold;}
 
