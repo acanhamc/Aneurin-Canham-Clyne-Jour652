@@ -1,42 +1,49 @@
 .headline {font-size: 24px;
-          font-family: garamond, serif;
+          font-family: "EB garamond", serif;
           font-weight: bold;
           color: #2546FF;
           text-align: center;}
 
 .byline {font-size: 20 px;
-        font-family: garamond, serif;
-        color: #2546ff;
+        font-family: "EB Garamond", serif;
           text-align: center;
         font-style: italic;}
 
+        .hero-image {width: 100%;
+                    margin: 0 auto;
+                    max-width: 900px;}
+.chart {width: 100%;
+        margin: 0 auto;
+        max-width: 900px;}
 
 .chapter-headline {font-size: 20px;
-                  font-family: garamond, serif;
-                  color: #2546FF;
+                  font-family: "EB Garamond", serif;
+                  color: #FFCB26;
                 text-align: center;
                 font-style: italic;
                 font-weight: bold;}
 
 .chapter-text {font-size: 12px;
-               font-family: helvetica, sans-serif;
-               max-width: 1200px;
+               font-family:'roboto' , sans-serif;
+               max-width: 900px;
+               text-align: left;
                width: 100%;
                margin: 0 auto;
               }
 .info-header {font-size:16px;
-              font-family: helvetica, sans-serif;
+              font-family: "roboto", sans-serif;
               color: #2546ff;
               text-align: center;
               font-weight: bold;}
 
-.image {max-width: 1200px;
+
+.image {max-width: 900px;
         width: 100%;
         margin: 0 auto;}
 
   .caption {font-size: 12px;
-                 font-family: helvetica, sans-serif;
-                 max-width: 1200px;
+                 font-family: 'roboto', sans-serif;
+                 max-width: 900px;
                  width: 100%;
                  margin: 0 auto;}
 

@@ -22,6 +22,12 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js" charset="utf-8"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.14/c3.min.js"></script>
 
+   <!--Bootstrap grids-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!--google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -36,20 +42,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#chapter-1"> Arrest Data <span class="sr-only"></span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="#chapter-2">What is an arrest?</a>
       </li>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="#chapter-3">UMPD and the students</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
       <!--this is the end of the navbar-->
@@ -58,75 +60,119 @@
 
   <!--using text from old essays as filler for style-->
   <p class="headline">
-    University of Maryland Police arrest hundreds of people every year. For years most of them were black.
+    University of Maryland Police arrest a disproprtionate number of black people, Police data show
   </p>
 
-<p class="byline">
-  Aneurin Canham-Clyne
-</p>
 
-<img src="" alt="Police Heaquarters on Baltimore Avenue" class="image">
+<center> <img src="images/pocomoke.jpg" alt="Police Heaquarters on Baltimore Avenue" class="hero-image">
 
 <p class="caption">
 The Pocomoke Building on Baltimore Avenue is the Headquarters for UMPD. Photos are original.
 </p>
-<br>
-<p class="chapter-headline">
-Arrest Data
+<p class="byline">
+  By Aneurin Canham-Clyne
 </p>
-<br>
-<p class="chapter-text">In 2013 the University of Maryland Police Department’s jurisdiction expanded to include most of the city of College Park. Since then UMPD has arrested at least 3,549 people. At least 48% of the people they arrested were black. This data was collected from publicly available records on the UMPD website and then sorted to remove cases where individuals were arrested one time but charged with multiple crimes, or cases where one person was arrested for crimes committed multiple incidents on different dates.
+<p class="chapter-headline">
+<a name="chapter-1">Arrest Data</a>
+</p>
+
+<p class="chapter-text">In 2013 the University of Maryland Police Department’s jurisdiction expanded to include most of the city of College Park. Since then UMPD has arrested at least 3,549 people. At least 48% of the people they arrested were black. This data was collected from publicly available records on the UMPD website and then sorted to remove cases where individuals were arrested one time but charged with multiple crimes, or cases where one person was arrested for crimes committed multiple incidents on different dates.</p>
   <br>
-
-</p><br>
-
+<p class="chapter-text">About 8% of the time, UMPD did not record a race when making arrests. This accounts for about 267 arrests, but 192 of those were concentrated in just a couple years.</p>
 <br>
-<p class="info-header">Arrests by Year 2013-2018</p>
- <div id="myLineChart"></div>
+<p class="chapter-text">According to <a href="https://www.usmd.edu/IRIS/?view=UMCP">data from the University of Maryland, College Park,</a> the school’s student body is about 10.6% black. <a href="http://www.city-data.com/races/races-College-Park-Maryland.html">City-Data.com,</a> meanwhile, claimed that in 2017 College Park was about 18% black and 13% Hispanic. City-Data claims that in 2017 College Park’s population was 47.7% white, while UMD’s statistics reported that the student body was about 46.6% white.</p>
 <br>
-<p class="chapter-text">
 <p class="info-header">Racial distribution of arrests, according to UMPD data</p>
 
   <div id="racedistributionchart"></div>
 
-  <p class="chapter-text">About eight percent of the time, UMPD did not record a race when making arrests. This accounts for about 267 arrests, but 192 of those were concentrated in just a couple years.</p>
-  <br>
-
-  <p class="chapter-text"> According to Forbes Magazine’s 2019 College Rankings, UMD’s student population is about 13% black or African American. City-Data.com, meanwhile, claimed that in 2017 College Park was about 18% black and 13% Hispanic. City Data claims that in 2017 College Park’s population was 47.7% white, while Forbes reported that UMD’s student population was 50.2% white. </p>
+<br>
+<p class="chapter-text">UMPD disproportionately arrests black people, some years the disparity is clearer than in others, as in 2017 when 56% of all the people arrested by UMPD were black. In other years, like 2014, less than half the people arrested by UMPD were black. One thing was consistent, since at least 2013, UMPD has arrested more black people than any other racial category, despite College Park’s white plurality, and the white plurality in UMD’s student body.</p>
+<br>
+<p class="chapter-text">Across that same timespan, arrests fell for several years, before shooting sharply upwards this year. The decline in arrests was sharp, arrests fell by about 11% from 2013 to 2014, and by 27% between 2014 and 2015. They kept falling, and arrests in 2016 were less than half of 2013’s total.</p>
+<br>
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1j-xPvPzWpAfR_BzVRlAwmZN7NMI8c8XXiGvUnw7DruE&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+<br>
+<p class="info-header">Arrests by Year 2013-2018</p>
+ <div class="chart" id="myLineChart"></div>
+<br>
+<p class="chapter-text">According to a copy of UMPD’s <a href="https://www.umpd.umd.edu/stats/ucr/">Universal Crime Report,</a> a batch of statistics the department is required to submit to the FBI, larceny-theft, burglary and motor vehicle theft in College Park all decreased between 2013 and 2019, though some categories saw year to year fluctuations in their totals. </p>
+<br>
+<p class="chapter-text">“Last year was our lowest crime year ever,” UMPD Public Information Officer, Sergeant Roseanne Hoaas said.</p>
+<br>
+<p class="chapter-text">But arrests increased sharply from 2018 to 2019, by 56%.  With over a month left in the year, the statistics for this article were gathered in mid-November, that figure doesn’t reflect the final count for the year. That increase works out to 201 more arrests in the first eleven months of 2019 than in the entirety of 2018. While this year’s UCR shows modest numerical increases in several categories, only motor vehicle thefts saw an increase of more than 50%, with the number of thefts rising from 11 to 25.</p>
+<br>
+<p class="chapter-text">Hoaas said there were several factors behind the year-to-year increase in arrests.
+</p>
+<br>
+<p class="chapter-text">“We had a police academy class graduate earlier this year,” Hoaas said. Hoaas suggested that new officers who are eager to prove their professionalism might make more arrests and that UMPD is trying to cut down on DUIs.
+</p>
+<br>
+<p class="chapter-text">“They’re young, energized officers,” Hoaas said. “Each officer finds what their passion is about the job.”
+</p>
+<br>
+<img class="image" src="images/car.jpg">
+<p class="caption"> A UMPD Car outside  in the rain by the University of Maryland Health Center. Sgt. Hoaas said such weather can reduce arrests and crime. photo is original </p>
+<br>
+<p class="chapter-text">But UMPD hired graduates of academy classes <a href="https://umpdnews.umd.edu/node/199">in years in which arrests fell.</a> According to Hoaas, UMPD has somewhere between 70 and 80 sworn officers, and academy classes are usually fewer than ten cadets.</p>
+<br>
+<p class="chapter-text">Hoaas also said that changes in weather could impact arrests, as 2018 was a wetter year, potentially prompting people to stay inside and avoid public areas and behaviors that might increase crime. 2019, meanwhile, has been dryer, according to Hoaas, while crime has increased slightly. </p>
 <br>
   <p class="chapter-headline">
-  What is an arrest?
+  <a name="chapter-2">What is an arrest?</a>
   </p>
 
-  <p class="chapter-text">According to Sergeant Roseanne Hoaas, the Public Information Officer for UMPD, arrests don’t necessarily mean the police handcuff someone and take them to a holding cell, although that does happen. Hoaas said UMPD officers have wide discretion when making arrests,  that some arrests are filed well after events and calls, in the form of criminal summonses.
-    </p>
+  <p class="chapter-text">According to Sergeant Hoaas, arrests don’t necessarily mean the police handcuff someone and take them to a holding cell, although that does happen. Hoaas said UMPD officers have wide discretion when making arrests,  that some arrests are filed well after events and calls, in the form of criminal summonses. </p>
+<br>
+<p class="chapter-text"> Hoaas said UMPD counts criminal summonses and even some civil citations in its arrest data. Criminal summonses, according to Hoaas, are citations given by officers that result in a later court date for a criminal offense, while civil citations include some alcohol and marijuana offenses.</p>
+<br>
+<p class="chapter-text">“Most commonly, what we refer to as the on-view arrest, is where an officer will place handcuffs on you,” Hoaas said. Hoaas explained the different kinds of arrests, “maybe the officer will charge them at a later date, so they’ll get a criminal summons, or a warrant will be issued for their arrest.”</p>
   <br>
-  <p class="chapter-text">Hoaas said UMPD counts criminal citations and even some civil citations in its arrest data. Criminal citations, according to Hoaas, are citations given by officers that result in a later court date for a criminal offense, while civil citations include some alcohol and marijuana offenses.
+  <p class="chapter-text">Hoaas said UMPD counts criminal citations and even some civil citations in its arrest data. Criminal citations, according to Hoaas, are citations given by officers that result in a later court date for a criminal offense, while civil citations include some <a href="https://law.justia.com/codes/maryland/2018/criminal-law/title-10/subtitle-1/part-ii/section-10-119/"> alcohol</a> and <a href="https://law.justia.com/codes/maryland/2018/criminal-law/title-5/subtitle-6/part-i/section-5-601.1/">marijuana</a> offenses.
   </p>
   <br>
-
-  <p class="chapter-text">Elonna Jones, 21, a senior at the University of Maryland College Park and president of the school’s branch of the NAACP, said the arrest statistics were jarring, but not surprising. Jones said the disparities in arrests show that racial bias is inextricably linked to arrests.
-  </p>
-
-  <p class="chapter-text"> [paragraph about arrests marked Suspicion, No Charges]
-  </p>
-
-<p class="chapter-headline">UMPD and the students
+<p class="chapter-headline"><a name="chapter-3">UMPD and the students</a>
 </p>
 <br>
-<p class="chapter-text"> Jones also noted that first-year black enrollment at UMD has fallen recently, a trend she attributed to Wallace Loh’s presidency, in particular, his response to the murder of 2nd lieutenant Richard Collins III.
-</p>
+<p class="chapter-text">Elonna Jones, 21, a senior at the University of Maryland College Park and president of the school’s branch of the NAACP, said the arrest statistics were jarring, but not surprising. Jones said the disparities in arrests show that racial bias is inextricably linked to arrests. </p>
 <br>
-<p class="chapter-text"> Collins, a black student from Bowie State University, was murdered days before his graduation in May 2017. Sean Urbanski, a former UMD student, was charged with Collins’ murder and with hate crimes, according to the Diamondback.
-</p>
-<br>
-<p class="chapter-text"> According to Jones, the bus stop where Collins was murdered has [confirm the exact quotes with recording]. Jones said many black students do not feel safe on campus, and that this feeling is exacerbated by the Administration’s lack of transparency.
-</p>
-<br>
-<p class="chapter-text"> Hoaas, meanwhile, said that UMPD tries to perform community outreach. Hoaas claims the department sends officers to events where their presence is requested, as a way to provide security. UMPD also runs a police auxiliary program, which enlists students to assist in public safety work. Hoaas said the auxiliary program, and other community outreach efforts are part of an ongoing effort by UMPD to be seen well.
-</p>
+<p class="chapter-text"> “Racial bias is just inextricably linked, at the current time, in the criminal justice system, to policing and arrest,” Jones said.</p>
 
-<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1j-xPvPzWpAfR_BzVRlAwmZN7NMI8c8XXiGvUnw7DruE&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+<br>
+<p class="chapter-text">“Arrests are where everything starts,” Jones said. “If these people are more likely to be arrested, then these people are more likely to be in jail or incarcerated.” </p>
+
+<br>
+<p class="chapter-text">Sergeant Hoaas said UMPD enforces laws and makes arrests based on probable cause. </p>
+
+<br>
+<p class="chapter-text">“We enforce the laws across the board,” Hoaas said. “It is not based on what someone looks like, it is based on the behavior." </p>
+
+<br>
+<p class="chapter-text">Jones also noted that first-year black enrollment at UMD has fallen recently, a trend she attributed to Wallace Loh’s presidency, in particular, his response to the murder of 2nd lieutenant Richard Collins III. <a href="https://www.baltimoresun.com/education/bs-md-umd-black-student-enrollment-20181031-story.html">The Baltimore Sun </a>reported on this decline in enrollment, which saw black freshmen enrollment fall to 7.3% in 2018. However, UMD statistics showed black freshmen enrollment rebounded to just over 11%. </p>
+
+<br>
+<p class="chapter-text">Collins, a black student from Bowie State University, was murdered days before his graduation in May 2017. Sean Urbanski, a former UMD student, was charged with Collins’ murder and with <a href="https://dbknews.com/2019/06/05/umd-hate-crime-college-park-urbanski/"> a hate crime,</a> according to the Diamondback.  </p>
+<br>
+<img src="images/collins.jpg" class="image" alt="The bus stop where Collins was murdered">
+<p class="caption"> An impromptu memorial at the bust stop where 2nd Lt. Richard Collins III was murdered in 2017. Photo is original, taken 12/9/2019</p>
+<br>
+<p class="chapter-text">According to Jones, the bus stop where Collins was murdered has become something of a memorial, because the University hasn’t set aside any space for students to memorialize Collins. Jones said many black students do not feel safe on campus, and that this feeling is exacerbated by the Administration’s lack of transparency, both around Collins’ murder, and other racist incidents.
+ </p>
+
+<br>
+<p class="chapter-text">“There were events before that,” Jones said. “There was a noose that was found in a house on fraternity row, and all we got about that is ‘oh that’s being investigated,’ where’s the follow-up? What sanctions were assigned to this person or this fraternity? Since those aren’t things that aren’t readily available and aren’t things that are told to black students and other students of color, how can we ever feel secure on this campus.” </p>
+
+<br>
+<p class="chapter-text">Hoaas, meanwhile, said that UMPD tries to perform community outreach. Hoaas claims the department sends officers to events where their presence is requested, as a way to provide security, but that they do not go to events uninvited. UMPD also runs a police auxiliary program, which enlists students to assist in public safety work. Hoaas said the auxiliary program, and other community outreach efforts are part of an ongoing effort by UMPD to be seen well. </p>
+
+<br>
+<p class="chapter-text">Jones said UMPD was very removed from the student body.  </p>
+
+<br>
+<p class="chapter-text">“The times that I have seen the police, outside of my position as a resident assistant, it has been in a somewhat threatening manner. I feel that there always seems to be a presence of police at large black gatherings,” Jones said. </p>
+
+<img class="image" src="images/sign.jpg">
+<p class="caption">A sign outside the UMPD building on Baltimore Ave. Photo is original</p>
 
 
 </div>
@@ -134,7 +180,7 @@ Arrest Data
 
 
 <p class="footer">
-Copyright:
+Copyright:Aneurin Canham-Clyne
 </p>
 </div>
 
